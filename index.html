@@ -5,24 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <style>
+      a:link {
+        color: white;
+        background-color: teal;
+        padding: 10px;
+      }
+
+      a:visited {
+        background-color: yellow;
+        border-color: hotpink;
+        color: hotpink;
+      }
+
+      a:hover {
+        background-color: blue;
+        color: black;
+      }
+      a:active {
+        background-color: darkgrey;
+        color: purple;
+      }
+    </style>
   </head>
   <body>
-    <div class="parent">
-        <div class="child child1">
-            <p class="caps">Get <span>insights</span> that help you grow.
-                <p class="small">
-                    Discover the benifits of data analytics and make better decisions
-                    regarding revenue, customer experience and overall efficiency
-                </p>
-            </p>
-              <div class="num">
-                  <p class="big"> 10k+ </p>
-              </div>  
+    <div class="p-2 mb-4 bg-light rounded-3 border border-bottom">
+        <div class="container-fluid py-3">
+          <h1 class="display-5 fw-bold fst-italic">CSS Styling Links</h1>
         </div>
-        <div class="child child2">
-<img src="https://wallpaperaccess.com/full/2241223.jpg" alt="" srcset="">
-        </div>
+      </div>
+
+</div>
+
+    <div class="container mt-2">
+      <div class="row text-md-center col-3">
+        <a href="#test-visited-link">Click here to visit</a><br /><br />
+      </div>
+    </div>
+    <div class="container border border-primary mt-3">
+      <dl class="row">
+        <dt class="col-sm-3 mt-3">:link</dt>
+        <dd class="col-sm-9 mt-3">
+          The :link CSS pseudo-class represents an element that has not yet been
+          visited. It matches every unvisited &lta&gt or &ltarea&gt element that
+          has an href attribute.
+          <p class="my-3">
+            <strong>Eg:</strong> The color of the link usually be blue, here the
+            background and the text color has been changed to teal and white
+            respectively as set with the css.
+          </p>
+        </dd>
+
+        <dt class="col-sm-3 mt-3">:visited</dt>
+        <dd class="col-sm-9 mt-3">
+          The :visited CSS pseudo-class represents links that the user has
+          already visited. For privacy reasons, the styles that can be modified
+          using this selector are very limited because of privacy issues.
+          <p class="my-3">
+            <strong>Eg:</strong> When you click the link above the background
+            and the text color will be changed to yellow and pink respectively
+            as set with the css.
+          </p>
+        </dd>
+
+        <dt class="col-sm-3 mt-3">:hover</dt>
+        <dd class="col-sm-9 mt-3">
+          The :hover CSS pseudo-class matches when the user interacts with an
+          element with a pointing device, but does not necessarily activate it.
+          It is generally triggered when the user hovers over an element with
+          the cursor (mouse pointer).
+          <p class="my-3">
+            <strong>Eg:</strong> When hovered the background changes to blue and
+            text color to black
+          </p>
+        </dd>
+
+        <dt class="col-sm-3 mt-3">:active</dt>
+        <dd class="col-sm-9 mt-3">
+          The :active CSS pseudo-class represents an element (such as a button)
+          that is being activated by the user. When using a mouse, "activation"
+          typically starts when the user presses down the primary mouse button.
+          <p class="my-3">
+            <strong>Eg:</strong> When the link is active (i.e) the moment when
+            it is clicked or holded up on, then the active pseudo class changes
+            the text color to brown and the background to blue
+          </p>
+        </dd>
+      </dl>
     </div>
   </body>
 </html>
